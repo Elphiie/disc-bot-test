@@ -88,16 +88,39 @@ class Commandings(commands.Cog):
         
 
 
+<<<<<<< Updated upstream
 intents = discord.Intents.default()
 intents.members = True
+=======
+<<<<<<< HEAD
+    @commands.command(name='hello')
+    async def hello(self, ctx: commands.Context):
+        async with ctx.typing():    
+            await getchannel().send('Hello World!')
+=======
+intents = discord.Intents.default()
+intents.members = True
+>>>>>>> fbb67926332f58cc8b18045a9a748b257c318dfe
+>>>>>>> Stashed changes
 
 bot = commands.Bot('!', description='Testing', intents=intents)
         
 bot.add_cog(Commandings(bot))
 
+<<<<<<< Updated upstream
 @bot.event
 async def on_ready():
     print('Logged on as {0.user.name}!'.format(bot))
+=======
+<<<<<<< HEAD
+bot = commands.Bot(command_prefix='!', description='Testing',)
+bot.add_cog(Command(bot))        
+=======
+@bot.event
+async def on_ready():
+    print('Logged on as {0.user.name}!'.format(bot))
+>>>>>>> fbb67926332f58cc8b18045a9a748b257c318dfe
+>>>>>>> Stashed changes
 
 
 bot.run('OTI3NDY5NDIwMzg3OTEzNzI4.YdKrNQ.c0GL07c_RCo0QlRSTfv3UiJzH60')
